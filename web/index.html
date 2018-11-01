@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计当前web应用的访问次数</title>
+</head>
+<body>
+    <!--发出请求可通过：表当和超链接的方式-->
+    通过超链接发出请求，每点击一次即发出一次请求<br>
+    <a href="/demo6">demo6</a>
+    <a href="/demo7">demo7</a>
+    <a href="/demo8">demo8</a><br><br>
+
+
+    <!--<a href="/demo9?username=二狗&password=123456">demo9</a><br><br>-->
+    <!--action 表示表单提交的url ,method 表示表单的请求方式-->
+    <form action="/demo9" method="post">
+        username:<input type="text" name="username" value=""><br><br>
+        password:<input type="password" name="password" value=""><br><br>
+        <h2>单选、多选、下拉列表</h2><br><br>
+        性  别：<input type="radio" name="sex" value="man">男&nbsp;&nbsp;<input type="radio" name="sex" checked="checked" value="woman">女<br><br>
+        兴  趣：<input type="checkbox" name="love" value="basketball">篮球&nbsp;&nbsp;
+                <input type="checkbox" name="love" value="tablet ennis">乒乓球&nbsp;&nbsp;
+                <input type="checkbox" name="love" value="badminton">羽毛球&nbsp;&nbsp;
+                <input type="checkbox" name="love" value="football">足球&nbsp;&nbsp;<br><br>
+        归属地：<select name="city">
+                    <option selected>北京</option>
+                    <option>上海 </option>
+                    <option>山西</option>
+                    <option>深圳</option>
+                    <option>杭州</option>
+                </select><br><br>
+        <!--提交表单-->
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
